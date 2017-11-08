@@ -18,6 +18,32 @@
  @import "bootstrap";
  @import "font-awesome";
 
+  .btn-danger {
+     color: #fff;//字体颜色
+
+     background-color: #009688;//背景颜色
+
+     border-color: #009688;//边框颜色
+
+ }
+
+ .btn-danger:hover {
+     background-color: #E65100;//鼠标放置在btn上的背景颜色
+
+     border-color: #E65100;//鼠标放置在btn上的边框颜色
+
+ }
+
+ 
+
+
+
+  .container-fluid .jumbotron{
+   padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
+   margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+   border-radius: 0;//圆角为0
+ }
+
  .caption {
   margin: 30px;
   text-align: center;
@@ -50,16 +76,23 @@
  //---------Navbar---------
 
  .navbar-default {
-     background-color: #212121;
-     border-color: #212121;
+     background-color: #424242;
+     border-color: #424242;
      margin-bottom: 0;
      border-radius: 0;
  }
 
  .navbar-default .navbar-brand {
-     color: #EF6C00;
+     color: #FFD180;
      padding: 10px 15px;
      line-height: 30px;
+ }
+
+  .navbar-brand > img {
+     display: inline-block; //图片和链接文字显示在同一行
+     margin-right: 10px; //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
  }
 
  .navbar-default .navbar-brand:hover,
@@ -69,7 +102,7 @@
  }
 
  .navbar-default .navbar-nav > li > a {
-     color: #EF6C00;
+     color: #FFD180;
  }
 
  .navbar-default .navbar-nav > li > a:hover,
@@ -108,11 +141,13 @@
     }
 
     .title {
-        text-align: center;
-        margin-bottom: 80px;
+      text-align: center;
+      margin-bottom: 40px;
+
     }
 
     .slogan {
+
         color: #222;
         margin-top: 10px;
         margin-bottom: 50px;
@@ -163,6 +198,6 @@ footer {
 }
 
 footer .footer-below {
-    padding: 25px 0;
-    background-color: #233140;
+    padding: 6px 0;
+    background-color: #424242;
 }
